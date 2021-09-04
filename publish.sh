@@ -5,9 +5,11 @@ if [ "$1" == "" ]; then
 	exit 1
 fi
 
+gitbook install &&
 gitbook build &&
 git checkout gh-pages &&
 cp -R _book/* . &&
+git clean -fx node_modules &&
 git clean -fx _book &&
 git add . &&
 git commit -a -m "$1" &&

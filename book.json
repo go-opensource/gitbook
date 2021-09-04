@@ -1,6 +1,8 @@
 {
-	    "structure": {
-		            "readme": "INTRODUCE.md"
-			        }
+	"title": "go-opensource",
+	"plugins": ["prism","expandable-chapters-small","toggle-chapters"],		       
+       	"structure": {
+            "readme": "INTRODUCE.md"
+	}
 }
 
